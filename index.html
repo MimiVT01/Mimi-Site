@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anxy | Digital Artist & Illustrator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="links">
+      <a href="#about" class="nav-btn">About</a>
+      <a href="#samples" class="nav-btn">Samples</a>
+      <a href="#pricing" class="nav-btn">Pricing</a>
+      <a href="#contact" class="nav-btn">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <img class="hero-corner-img" src="images/hero-flower.png" alt="Decorative corner image">
+    <img class="leftside-img" src="images/leftside.png" alt="Decorative leftside image">
+    <img class="rightside-img" src="images/rightside.png" alt="Decorative rightside image">
+    <div class="hero-inner">
+      <h1 class="fade-in">Anxy</h1>
+      <p class="fade-in-delay">Digital Artist & Character Illustrator</p>
+      <a href="gallery.html" class="btn fade-in-delay2">Explore My Art</a>
+    </div>
+  </header>
+
+  <section id="about" class="section fade-section">
+    <h2>About Me</h2>
+    <p>
+      Hi! I’m Anxy a teen artist who refuses to choose between traditional and digital, so I just… do both.
+      I usually start with pencil and paper, then drag my art into digital to add colors, chaos, and whatever else
+      my brain decides looks cool that day. I’m still finding my path in art, but honestly, that’s half the 
+      adventure experimenting, messing up, trying again, and sometimes surprising myself.
+    </p>
+    <p>
+      I’ve also practice sculpting  (3 years in hell) , especially anatomy, because who doesn’t want to figure
+      out how bodies actually work? Right now, I’m working on finishing art high school, collecting skills (and 
+      probably more paint stains) as I go, and discovering what kind of artist I’ll be!
+    </p>
+  </section>
+
+  <section id="highlights" class="highlight-section fade-section">
+    <div class="highlight">
+      <h3>✨ Professional Studies</h3>
+      <p>Backed by official art studies</p>
+    </div>
+    <div class="highlight">
+      <h3>🎨 4+ Years Experience</h3>
+      <p>Mastering digital color & form</p>
+    </div>
+    <div class="highlight">
+      <h3>💌 Custom Commissions</h3>
+      <p>Every piece crafted uniquely for you</p>
+    </div>
+  </section>
+
+  <section id="samples" class="section alt-section fade-section">
+    <h2>Samples</h2>
+    <div class="gallery">
+      <img src="images/art1.jpg" alt="Artwork 1">
+      <img src="images/art2.jpg" alt="Artwork 2">
+      <img src="images/art3.jpg" alt="Artwork 3">
+      <img src="images/art4.jpg" alt="Artwork 4">
+      <img src="images/art5.jpg" alt="Artwork 5">
+      <img src="images/art6.jpg" alt="Artwork 6">
+    </div>
+  </section>
+
+  <section id="pricing" class="section fade-section">
+    <h2>Pricing</h2>
+    <p>Standard commission rates — detailed, transparent, and fair.</p>
+    <table>
+      <tr><th>Type</th><th>Description</th><th>Price (USD)</th></tr>
+      <tr><td>Profile Picture (PFP)</td><td>Bust-up portrait, full render</td><td>$40</td></tr>
+      <tr><td>Half Body</td><td>Waist-up, detailed character</td><td>$70</td></tr>
+      <tr><td>Full Body</td><td>Complete figure, dynamic pose</td><td>$100+</td></tr>
+      <tr><td>Character Design</td><td>Original design concept or ref sheet</td><td>$120+</td></tr>
+    </table>
+  </section>
+
+  <section id="contact" class="section alt-section fade-section">
+    <h2>Contact Me</h2>
+    <p>For commissions or collaborations:</p>
+    <div class="contact-links">
+      <a href="mailto:anxy.art@example.com">✉️ Email Me</a>
+      <a href="https://instagram.com/anxyart" target="_blank">📸 Instagram</a>
+      <a href="http://x.com/anxy_76?t=xD3cCP8SROewLCdOJQVsRw&s=09" target="_blank">🐦 Twitter/X</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 <a href="Mimi">Mimi</a> | Crafted with ❤️ & creativity</p>
+  </footer>
+
+  <a href="#contact" class="float-btn">Commission Me</a>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-section').forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
